@@ -1,0 +1,71 @@
+<GUIDES xmlns:ndb="http://NDBtouroperator.fr/myvocabulary#">
+   <GUIDE>
+      <ID id="g1"/>
+      <GUIDE_NAME>Julian</GUIDE_NAME>
+      <TOUR>Darwin to Sydney</TOUR>
+   </GUIDE>
+   <GUIDE>
+      <ID id="g2"/>
+      <GUIDE_NAME>Rose</GUIDE_NAME>
+      <TOUR>Darwin to Sydney</TOUR>
+   </GUIDE>
+   <GUIDE>
+      <ID id="g3"/>
+      <GUIDE_NAME>Yen-Yen</GUIDE_NAME>
+      <TOUR>This guide doesn't have any tour assigned</TOUR>
+   </GUIDE>
+   <GUIDE>
+      <ID id="g4"/>
+      <GUIDE_NAME>Patrick</GUIDE_NAME>
+      <TOUR>Winetasting in Italy</TOUR>
+   </GUIDE>
+   <GUIDE>
+      <ID id="g5"/>
+      <GUIDE_NAME>Alberto</GUIDE_NAME>
+      <TOUR>Winetasting in Italy</TOUR>
+      <TOUR>Boston by Foot</TOUR>
+      <TOUR>Cruising the Caribbean</TOUR>
+      <TOUR>Family Disneyland</TOUR>
+      <TOUR>Family Seaworld and Australia Zoo</TOUR>
+      <TOUR>Family Ski Trip</TOUR>
+   </GUIDE>
+   <GUIDE>
+      <ID id="g6"/>
+      <GUIDE_NAME>Delphine</GUIDE_NAME>
+      <TOUR>Boston by Foot</TOUR>
+      <TOUR>Cruising the Caribbean</TOUR>
+      <TOUR>Family Disneyland</TOUR>
+      <TOUR>Family Seaworld and Australia Zoo</TOUR>
+      <TOUR>Family Ski Trip</TOUR>
+   </GUIDE>
+   <GUIDE>
+      <ID id="g7"/>
+      <GUIDE_NAME>Carine</GUIDE_NAME>
+      <TOUR>This guide doesn't have any tour assigned</TOUR>
+   </GUIDE>
+   <GUIDE>
+      <ID id="g8"/>
+      <GUIDE_NAME>Mel</GUIDE_NAME>
+      <TOUR>This guide doesn't have any tour assigned</TOUR>
+   </GUIDE>
+   <GUIDE>
+      <ID id="g9"/>
+      <GUIDE_NAME>Ron</GUIDE_NAME>
+      <TOUR>This guide doesn't have any tour assigned</TOUR>
+   </GUIDE>
+   <GUIDE>
+      <ID id="g10"/>
+      <GUIDE_NAME>Pradeep</GUIDE_NAME>
+      <TOUR>This guide doesn't have any tour assigned</TOUR>
+   </GUIDE>
+   <GUIDE>
+      <ID id="g11"/>
+      <GUIDE_NAME>Mehdi</GUIDE_NAME>
+      <TOUR>This guide doesn't have any tour assigned</TOUR>
+   </GUIDE>
+   <GUIDE>
+      <ID id="g12"/>
+      <GUIDE_NAME>Malia</GUIDE_NAME>
+      <TOUR>This guide doesn't have any tour assigned</TOUR>
+   </GUIDE>
+</GUIDES>

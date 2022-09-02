@@ -1,0 +1,344 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="NDB_touroperator_avgrating.xsl"?> 
+<!-- THIS IS THE DATABASE FOR ALL TOURS OFFERED BY NDBTOUROPERATOR-->
+<ndb:TOURS 
+	xmlns:ndb="http://NDBtouroperator.fr/myvocabulary#" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://NDBtouroperator.fr/myvocabulary#  NDB_touroperator.xsd">
+	<ndb:TOUR>
+		<ndb:TOURNAME>Darwin to Sydney</ndb:TOURNAME>
+		<ndb:DEST_CONTINENT contidref="con5">
+			<ndb:DEST_COUNTRY countidref="con51" />
+		</ndb:DEST_CONTINENT>
+		<ndb:TOUR_TYPE typeidref="t3"/>
+		<ndb:DURATION>16 days</ndb:DURATION>
+		<ndb:INSTANCES>
+			<ndb:INSTANCE>
+				<ndb:START_DATE>2022-02-24</ndb:START_DATE>
+				<ndb:PRICE>2799</ndb:PRICE>
+				<ndb:TOURGUIDE guideref="g1" />
+				<ndb:CLIENTS>
+					<ndb:TOURCLIENT clientref="cl1" />
+					<ndb:TOURCLIENT clientref="cl3" />
+				</ndb:CLIENTS>
+			</ndb:INSTANCE>
+			<ndb:INSTANCE>
+				<ndb:START_DATE>2022-05-13</ndb:START_DATE>
+				<ndb:PRICE>2959</ndb:PRICE>
+				<ndb:TOURGUIDE guideref="g2" />
+				<ndb:CLIENTS>
+					<ndb:TOURCLIENT clientref="cl2" />
+					<ndb:TOURCLIENT clientref="cl4" />
+				</ndb:CLIENTS>
+			</ndb:INSTANCE>
+		</ndb:INSTANCES>
+		<ndb:FLIGHTS>1</ndb:FLIGHTS>
+		<ndb:TRANSFERS>1</ndb:TRANSFERS>
+		<ndb:TOUR_BUDGET budgidref="b1" />
+		<ndb:RATINGS>
+			<ndb:RATING>2</ndb:RATING><ndb:RATING>3</ndb:RATING><ndb:RATING>2.5</ndb:RATING>
+		</ndb:RATINGS>
+		<ndb:DESCRIPTION>This tours the East coast of Australia and will take you from Darwin to Sydney via Brisbane and the sandy beaches of the Gold Coast. A one in a lifetime adventure!</ndb:DESCRIPTION>
+	</ndb:TOUR>
+	<ndb:TOUR>
+		<ndb:TOURNAME>Winetasting in Italy</ndb:TOURNAME>
+		<ndb:DEST_CONTINENT contidref="con4">
+			<ndb:DEST_COUNTRY countidref="con41" />
+		</ndb:DEST_CONTINENT>
+		<ndb:TOUR_TYPE typeidref="t2"/>
+		<ndb:DURATION>8 days</ndb:DURATION>
+		<ndb:INSTANCES>
+			<ndb:INSTANCE>
+				<ndb:START_DATE>2022-03-23</ndb:START_DATE>
+				<ndb:PRICE>1099</ndb:PRICE>
+				<ndb:TOURGUIDE guideref="g4" />
+				<ndb:CLIENTS>
+					<ndb:TOURCLIENT clientref="cl5" />
+					<ndb:TOURCLIENT clientref="cl6" />
+				</ndb:CLIENTS>
+			</ndb:INSTANCE>
+			<ndb:INSTANCE>
+				<ndb:START_DATE>2022-06-17</ndb:START_DATE>
+				<ndb:PRICE>1359</ndb:PRICE>
+				<ndb:TOURGUIDE guideref="g5" />
+				<ndb:CLIENTS>
+					<ndb:TOURCLIENT clientref="cl8" />
+					<ndb:TOURCLIENT clientref="cl7" />
+				</ndb:CLIENTS>
+			</ndb:INSTANCE>
+			<ndb:INSTANCE>
+				<ndb:START_DATE>2022-08-29</ndb:START_DATE>
+				<ndb:PRICE>1599</ndb:PRICE>
+				<ndb:TOURGUIDE guideref="g4" />
+				<ndb:CLIENTS>
+					<ndb:TOURCLIENT clientref="cl10" />
+					<ndb:TOURCLIENT clientref="cl9" />
+				</ndb:CLIENTS>
+			</ndb:INSTANCE>
+		</ndb:INSTANCES>
+		<ndb:FLIGHTS>0</ndb:FLIGHTS>
+		<ndb:TRANSFERS>1</ndb:TRANSFERS>
+		<ndb:TOUR_BUDGET budgidref="b2" />
+		<ndb:RATINGS>
+			<ndb:RATING>4</ndb:RATING><ndb:RATING>5</ndb:RATING><ndb:RATING>4.5</ndb:RATING>
+		</ndb:RATINGS>
+		<ndb:DESCRIPTION>This tours will take you through the Chianti area of Italy where we will take you through some amazing vineyards and taste some of the world's most fantastic wines. We will also have the pleasure to pair the wines with some of the best of Tuscan cuisine</ndb:DESCRIPTION>
+	</ndb:TOUR>
+	<ndb:TOUR>
+		<ndb:TOURNAME>Boston by Foot</ndb:TOURNAME>
+		<ndb:DEST_CONTINENT contidref="con1">
+			<ndb:DEST_COUNTRY countidref="con11" />
+		</ndb:DEST_CONTINENT>
+		<ndb:TOUR_TYPE typeidref="t10"/>
+		<ndb:DURATION>5 days</ndb:DURATION>
+		<ndb:INSTANCES>
+			<ndb:INSTANCE>
+				<ndb:START_DATE>2022-04-15</ndb:START_DATE>
+				<ndb:PRICE>899</ndb:PRICE>
+				<ndb:TOURGUIDE guideref="g6" />
+				<ndb:CLIENTS>
+					<ndb:TOURCLIENT clientref="cl4" />
+					<ndb:TOURCLIENT clientref="cl6" />
+				</ndb:CLIENTS>
+			</ndb:INSTANCE>
+			<ndb:INSTANCE>
+				<ndb:START_DATE>2022-08-08</ndb:START_DATE>
+				<ndb:PRICE>1249</ndb:PRICE>
+				<ndb:TOURGUIDE guideref="g5" />
+				<ndb:CLIENTS>
+					<ndb:TOURCLIENT clientref="cl3" />
+					<ndb:TOURCLIENT clientref="cl2" />
+				</ndb:CLIENTS>
+			</ndb:INSTANCE>
+		</ndb:INSTANCES>
+		<ndb:FLIGHTS>0</ndb:FLIGHTS>
+		<ndb:TRANSFERS>0</ndb:TRANSFERS>
+		<ndb:TOUR_BUDGET budgidref="b1" />
+		<ndb:RATINGS>
+			<ndb:RATING>2</ndb:RATING><ndb:RATING>1</ndb:RATING><ndb:RATING>3.5</ndb:RATING>
+		</ndb:RATINGS>
+		<ndb:DESCRIPTION>This tours will get you to explore the fabulous American city of Boston by foot. Our local guide will get you to cover a lots of ground, from the Seaport neighborhood to the famous Harvard Square and you will get the opportunity to visit the Museum of Fine Arts, take a walk over the Charles River to MIT and even attend a local Redsox baseball game. You will quickly feel like a local!</ndb:DESCRIPTION>
+	</ndb:TOUR>
+	<ndb:TOUR>
+		<ndb:TOURNAME>Cruising the Caribbean</ndb:TOURNAME>
+		<ndb:DEST_CONTINENT contidref="con1">
+			<ndb:DEST_COUNTRY countidref="con12" />
+		</ndb:DEST_CONTINENT>
+		<ndb:TOUR_TYPE typeidref="t9"/>
+		<ndb:DURATION>14 days</ndb:DURATION>
+		<ndb:INSTANCES>
+			<ndb:INSTANCE>
+				<ndb:START_DATE>2022-05-03</ndb:START_DATE>
+				<ndb:PRICE>2599</ndb:PRICE>
+				<ndb:TOURGUIDE guideref="g6" />
+				<ndb:CLIENTS>
+					<ndb:TOURCLIENT clientref="cl7" />
+					<ndb:TOURCLIENT clientref="cl4" />
+				</ndb:CLIENTS>
+			</ndb:INSTANCE>
+			<ndb:INSTANCE>
+				<ndb:START_DATE>2022-09-14</ndb:START_DATE>
+				<ndb:PRICE>2499</ndb:PRICE>
+				<ndb:TOURGUIDE guideref="g5" />
+				<ndb:CLIENTS>
+					<ndb:TOURCLIENT clientref="cl1" />
+				</ndb:CLIENTS>
+			</ndb:INSTANCE>
+		</ndb:INSTANCES>
+		<ndb:FLIGHTS>1</ndb:FLIGHTS>
+		<ndb:TRANSFERS>1</ndb:TRANSFERS>
+		<ndb:TOUR_BUDGET budgidref="b3" />
+		<ndb:RATINGS>
+			<ndb:RATING>5</ndb:RATING><ndb:RATING>5</ndb:RATING><ndb:RATING>4.5</ndb:RATING>
+		</ndb:RATINGS>
+		<ndb:DESCRIPTION>This cruise will provide some well deserved relaxation as everything will provided for you and all you will need to do as we sail from Montserrat to St Lucia will be to enjoy the sights from your lounger! We have arranged for some stops with the local guides that will give you tours of the islands</ndb:DESCRIPTION>
+	</ndb:TOUR>
+	<ndb:TOUR>
+		<ndb:TOURNAME>Family Disneyland</ndb:TOURNAME>
+		<ndb:DEST_CONTINENT contidref="con1">
+			<ndb:DEST_COUNTRY countidref="con11" />
+		</ndb:DEST_CONTINENT>
+		<ndb:TOUR_TYPE typeidref="t7"/>
+		<ndb:DURATION>7 days</ndb:DURATION>
+		<ndb:INSTANCES>
+			<ndb:INSTANCE>
+				<ndb:START_DATE>2022-02-12</ndb:START_DATE>
+				<ndb:PRICE>2099</ndb:PRICE>
+				<ndb:TOURGUIDE guideref="g6" />
+				<ndb:CLIENTS>
+					<ndb:TOURCLIENT clientref="cl4" />
+				</ndb:CLIENTS>
+			</ndb:INSTANCE>
+			<ndb:INSTANCE>
+				<ndb:START_DATE>2022-05-29</ndb:START_DATE>
+				<ndb:PRICE>2399</ndb:PRICE>
+				<ndb:TOURGUIDE guideref="g5" />
+				<ndb:CLIENTS>
+					<ndb:TOURCLIENT clientref="cl7" />
+					<ndb:TOURCLIENT clientref="cl8" />
+				</ndb:CLIENTS>
+			</ndb:INSTANCE>
+		</ndb:INSTANCES>
+		<ndb:FLIGHTS>1</ndb:FLIGHTS>
+		<ndb:TRANSFERS>1</ndb:TRANSFERS>
+	    <ndb:TOUR_BUDGET budgidref="b2" />
+		<ndb:RATINGS>
+			<ndb:RATING>5</ndb:RATING><ndb:RATING>4</ndb:RATING><ndb:RATING>5</ndb:RATING><ndb:RATING>4.5</ndb:RATING>
+		</ndb:RATINGS>
+		<ndb:DESCRIPTION>Your chance to experience Disneyland as a VIP. Little ang big ones will have tons of funs on the rides and get to meet all Disney characters in person. A family holiday for all to remember!</ndb:DESCRIPTION>
+	</ndb:TOUR>
+	<ndb:TOUR>
+		<ndb:TOURNAME>Family Seaworld and Australia Zoo</ndb:TOURNAME>
+		<ndb:DEST_CONTINENT contidref="con5">
+			<ndb:DEST_COUNTRY countidref="con51" />
+		</ndb:DEST_CONTINENT>
+		<ndb:TOUR_TYPE typeidref="t7"/>
+		<ndb:DURATION>14 days</ndb:DURATION>
+		<ndb:INSTANCES>
+			<ndb:INSTANCE>
+				<ndb:START_DATE>2022-06-17</ndb:START_DATE>
+				<ndb:PRICE>2799</ndb:PRICE>
+				<ndb:TOURGUIDE guideref="g6" />
+				<ndb:CLIENTS>
+					<ndb:TOURCLIENT clientref="cl2" />
+					<ndb:TOURCLIENT clientref="cl4" />
+				</ndb:CLIENTS>
+			</ndb:INSTANCE>
+			<ndb:INSTANCE>
+				<ndb:START_DATE>2022-11-25</ndb:START_DATE>
+				<ndb:PRICE>2999</ndb:PRICE>
+				<ndb:TOURGUIDE guideref="g5" />
+				<ndb:CLIENTS>
+					<ndb:TOURCLIENT clientref="cl5" />
+				</ndb:CLIENTS>
+			</ndb:INSTANCE>
+		</ndb:INSTANCES>
+		<ndb:FLIGHTS>1</ndb:FLIGHTS>
+		<ndb:TRANSFERS>1</ndb:TRANSFERS>
+		<ndb:TOUR_BUDGET budgidref="b2" />
+		<ndb:RATINGS>
+			<ndb:RATING>5</ndb:RATING><ndb:RATING>5</ndb:RATING><ndb:RATING>5</ndb:RATING>
+		</ndb:RATINGS>
+		<ndb:DESCRIPTION>Come to Australia to meet animals you would see nowhere else. Our trip will start with Australia Zoo where you will meet the local kangaroos, wombats and wallabies. Then it's off to Seaworld to swim with dolphins before spending some time relaxing on the sandy beaches of the sunshine coast. What's not to love!</ndb:DESCRIPTION>
+	</ndb:TOUR>
+	<ndb:TOUR>
+		<ndb:TOURNAME>Family Ski Trip</ndb:TOURNAME>
+		<ndb:DEST_CONTINENT contidref="con4">
+			<ndb:DEST_COUNTRY countidref="con42" />
+		</ndb:DEST_CONTINENT>
+		<ndb:TOUR_TYPE typeidref="t7"/>
+		<ndb:DURATION>7 days</ndb:DURATION>
+		<ndb:INSTANCES>
+			<ndb:INSTANCE>
+				<ndb:START_DATE>2022-02-11</ndb:START_DATE>
+				<ndb:PRICE>1599</ndb:PRICE>
+				<ndb:TOURGUIDE guideref="g6" />
+				<ndb:CLIENTS>
+					<ndb:TOURCLIENT clientref="cl1" />
+					<ndb:TOURCLIENT clientref="cl3" />
+				</ndb:CLIENTS>
+			</ndb:INSTANCE>
+			<ndb:INSTANCE>
+				<ndb:START_DATE>2022-04-04</ndb:START_DATE>
+				<ndb:PRICE>1379</ndb:PRICE>
+				<ndb:TOURGUIDE guideref="g5" />
+				<ndb:CLIENTS>
+					<ndb:TOURCLIENT clientref="cl1" />
+					<ndb:TOURCLIENT clientref="cl3" />
+				</ndb:CLIENTS>
+			</ndb:INSTANCE>
+		</ndb:INSTANCES>
+		<ndb:FLIGHTS>0</ndb:FLIGHTS>
+		<ndb:TRANSFERS>1</ndb:TRANSFERS>
+		<ndb:TOUR_BUDGET budgidref="b2" />
+		<ndb:RATINGS>
+			<ndb:RATING>4</ndb:RATING><ndb:RATING>3.5</ndb:RATING>
+		</ndb:RATINGS>
+		<ndb:DESCRIPTION></ndb:DESCRIPTION>
+	</ndb:TOUR>
+	
+	<ndb:CONTINENT contid="con1">America</ndb:CONTINENT>
+	<ndb:CONTINENT contid="con2">Africa</ndb:CONTINENT>	
+	<ndb:CONTINENT contid="con3">Asia</ndb:CONTINENT>
+	<ndb:CONTINENT contid="con4">Europe</ndb:CONTINENT>
+	<ndb:CONTINENT contid="con5">Oceania</ndb:CONTINENT>	
+	
+	<ndb:COUNTRY countid="con11">USA</ndb:COUNTRY>
+	<ndb:COUNTRY countid="con12">Caribbean</ndb:COUNTRY>
+	<ndb:COUNTRY countid="con21">South Africa</ndb:COUNTRY>	
+	<ndb:COUNTRY countid="con31">Delhi</ndb:COUNTRY>
+	<ndb:COUNTRY countid="con41">Italy</ndb:COUNTRY>
+	<ndb:COUNTRY countid="con42">France</ndb:COUNTRY>
+	<ndb:COUNTRY countid="con51">Australia</ndb:COUNTRY>
+
+	<ndb:TYPE typeid="t1">Ecotourism</ndb:TYPE>
+	<ndb:TYPE typeid="t2">Wine Tasting</ndb:TYPE>
+	<ndb:TYPE typeid="t3">Adventure</ndb:TYPE>
+	<ndb:TYPE typeid="t4">Wildlife</ndb:TYPE>
+	<ndb:TYPE typeid="t5">Art &#38; Culture</ndb:TYPE>
+	<ndb:TYPE typeid="t6">Food</ndb:TYPE>
+	<ndb:TYPE typeid="t7">Family</ndb:TYPE>
+	<ndb:TYPE typeid="t8">Beach</ndb:TYPE>
+	<ndb:TYPE typeid="t9">Cruise</ndb:TYPE>
+	<ndb:TYPE typeid="t10">City Break</ndb:TYPE>
+	
+	<ndb:BUDGET budgid="b1">On a shoe string</ndb:BUDGET>
+	<ndb:BUDGET budgid="b2">Comfort</ndb:BUDGET>
+	<ndb:BUDGET budgid="b3">Luxury</ndb:BUDGET>
+	
+	<ndb:GUIDE guideid="g1">Julian</ndb:GUIDE> 
+	<ndb:GUIDE guideid="g2">Rose</ndb:GUIDE> 
+	<ndb:GUIDE guideid="g3">Yen-Yen</ndb:GUIDE> 
+	<ndb:GUIDE guideid="g4">Patrick</ndb:GUIDE> 
+	<ndb:GUIDE guideid="g5">Alberto</ndb:GUIDE> 	
+	<ndb:GUIDE guideid="g6">Delphine</ndb:GUIDE> 
+	<ndb:GUIDE guideid="g7">Carine</ndb:GUIDE> 	
+	<ndb:GUIDE guideid="g8">Mel</ndb:GUIDE> 	
+	<ndb:GUIDE guideid="g9">Ron</ndb:GUIDE> 	
+	<ndb:GUIDE guideid="g10">Pradeep</ndb:GUIDE> 	
+	<ndb:GUIDE guideid="g11">Mehdi</ndb:GUIDE> 	
+	<ndb:GUIDE guideid="g12">Malia</ndb:GUIDE> 
+
+	<ndb:CLIENT clientid="cl1">
+		<ndb:CLIENTLASTNAME>Peters</ndb:CLIENTLASTNAME>
+		<ndb:CLIENTFIRSTNAME>John</ndb:CLIENTFIRSTNAME>
+	</ndb:CLIENT> 
+    <ndb:CLIENT clientid="cl2">
+		<ndb:CLIENTLASTNAME>Jones</ndb:CLIENTLASTNAME>
+		<ndb:CLIENTFIRSTNAME>Mary</ndb:CLIENTFIRSTNAME>
+	</ndb:CLIENT> 
+	<ndb:CLIENT clientid="cl3">
+		<ndb:CLIENTLASTNAME>Costa</ndb:CLIENTLASTNAME>
+		<ndb:CLIENTFIRSTNAME>Linda</ndb:CLIENTFIRSTNAME>
+	</ndb:CLIENT> 
+	<ndb:CLIENT clientid="cl4">
+		<ndb:CLIENTLASTNAME>Jerudasen</ndb:CLIENTLASTNAME>
+		<ndb:CLIENTFIRSTNAME>Sandeep</ndb:CLIENTFIRSTNAME>
+	</ndb:CLIENT> 
+	<ndb:CLIENT clientid="cl5">
+		<ndb:CLIENTLASTNAME>Belda</ndb:CLIENTLASTNAME>
+		<ndb:CLIENTFIRSTNAME>Rosie</ndb:CLIENTFIRSTNAME>
+	</ndb:CLIENT> 
+	<ndb:CLIENT clientid="cl6">
+		<ndb:CLIENTLASTNAME>Jervis</ndb:CLIENTLASTNAME>
+		<ndb:CLIENTFIRSTNAME>Pamela</ndb:CLIENTFIRSTNAME>
+	</ndb:CLIENT> 
+	<ndb:CLIENT clientid="cl7">
+		<ndb:CLIENTLASTNAME>Brown</ndb:CLIENTLASTNAME>
+		<ndb:CLIENTFIRSTNAME>Penny</ndb:CLIENTFIRSTNAME>
+	</ndb:CLIENT> 
+	<ndb:CLIENT clientid="cl8">
+		<ndb:CLIENTLASTNAME>Chukwueweniwe</ndb:CLIENTLASTNAME>
+		<ndb:CLIENTFIRSTNAME>Stephane</ndb:CLIENTFIRSTNAME>
+	</ndb:CLIENT> 
+	<ndb:CLIENT clientid="cl9">
+		<ndb:CLIENTLASTNAME>Jayendranath</ndb:CLIENTLASTNAME>
+		<ndb:CLIENTFIRSTNAME>Sunita</ndb:CLIENTFIRSTNAME>
+	</ndb:CLIENT>     
+	<ndb:CLIENT clientid="cl10">
+		<ndb:CLIENTLASTNAME>Awan</ndb:CLIENTLASTNAME>
+		<ndb:CLIENTFIRSTNAME>Meili</ndb:CLIENTFIRSTNAME>
+	</ndb:CLIENT> 
+		
+	
+</ndb:TOURS>

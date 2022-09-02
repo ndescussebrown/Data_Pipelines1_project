@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 	
+	targetNamespace="http://NDBtouroperator.fr/myvocabulary#" 
+	xmlns:ndb="http://NDBtouroperator.fr/myvocabulary#"
+	elementFormDefault="qualified"
+	attributeFormDefault="unqualified">
+	<!-- THIS IS THE XML SCHEMA FOR ALL TOURS OFFERED BY NDBTOUROPERATOR-->
+	<xs:element name="TOURS">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="ndb:TOUR"/>
+				<xs:element maxOccurs="unbounded" ref="ndb:CONTINENT"/>
+				<xs:element maxOccurs="unbounded" ref="ndb:COUNTRY"/>
+				<xs:element maxOccurs="unbounded" ref="ndb:TYPE"/>
+				<xs:element maxOccurs="unbounded" ref="ndb:BUDGET"/>
+				<xs:element maxOccurs="unbounded" ref="ndb:GUIDE"/>
+				<xs:element maxOccurs="unbounded" ref="ndb:CLIENT"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key name="keycontinent">
+			<xs:selector xpath="ndb:CONTINENT"/>
+			<xs:field xpath="@contid"/>
+		</xs:key>
+		<xs:keyref name="refcontinent" refer="ndb:keycontinent">
+			<xs:selector xpath="ndb:TOUR/ndb:DEST_CONTINENT" />
+			<xs:field xpath="@contidref"/>
+		</xs:keyref> 
+	    <xs:key name="keycountry">
+			<xs:selector xpath="ndb:COUNTRY"/>
+			<xs:field xpath="@countid"/>
+		</xs:key>
+		<xs:keyref name="refcountry" refer="ndb:keycountry">
+			<xs:selector xpath="ndb:TOUR/ndb:DEST_CONTINENT/ndb:DEST_COUNTRY" />
+			<xs:field xpath="@countidref"/>
+		</xs:keyref> 
+		<xs:key name="keytype">
+			<xs:selector xpath="ndb:TYPE"/>
+			<xs:field xpath="@typeid"/>
+		</xs:key>
+		<xs:keyref name="reftype" refer="ndb:keytype">
+			<xs:selector xpath="ndb:TOUR/ndb:TOUR_TYPE" />
+			<xs:field xpath="@typeidref"/>
+		</xs:keyref> 
+		<xs:key name="keybudget">
+			<xs:selector xpath="ndb:BUDGET"/>
+			<xs:field xpath="@budgid"/>
+		</xs:key>
+		<xs:keyref name="refbudget" refer="ndb:keybudget">
+			<xs:selector xpath="ndb:TOUR/ndb:TOUR_BUDGET" />
+			<xs:field xpath="@budgidref"/>
+		</xs:keyref> 
+		<xs:key name="keyguide">
+			<xs:selector xpath="ndb:GUIDE"/>
+			<xs:field xpath="@guideid"/>
+		</xs:key>
+		<xs:keyref name="refguide" refer="ndb:keyguide">
+			<xs:selector xpath="ndb:TOUR/ndb:INSTANCES/ndb:INSTANCE/ndb:TOURGUIDE" />
+			<xs:field xpath="@guideref"/>
+		</xs:keyref> 
+				<xs:key name="keyclient">
+			<xs:selector xpath="ndb:CLIENT"/>
+			<xs:field xpath="@clientid"/>
+		</xs:key>
+		<xs:keyref name="refclient" refer="ndb:keyclient">
+			<xs:selector xpath="ndb:TOUR/ndb:INSTANCES/ndb:INSTANCE/ndb:CLIENTS/ndb:TOURCLIENT" />
+			<xs:field xpath="@clientref"/>
+		</xs:keyref> 
+	</xs:element>
+	
+	<xs:element name="TOUR" type="ndb:TOURtype"/>
+	<xs:complexType name="TOURtype">
+		<xs:sequence>
+			<xs:element ref="ndb:TOURNAME"/>
+			<xs:element ref="ndb:DEST_CONTINENT"/>
+			<xs:element ref="ndb:TOUR_TYPE"/>
+			<xs:element ref="ndb:DURATION"/>
+			<xs:element ref="ndb:INSTANCES"/>
+			<xs:element ref="ndb:FLIGHTS"/>
+			<xs:element ref="ndb:TRANSFERS"/>
+			<xs:element ref="ndb:TOUR_BUDGET"/>
+			<xs:element ref="ndb:RATINGS"/>
+			<xs:element ref="ndb:DESCRIPTION"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="INSTANCES" type="ndb:INSTANCEStype"/>
+	<xs:complexType name="INSTANCEStype">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" ref="ndb:INSTANCE"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="INSTANCE" type="ndb:INSTANCEtype"/>
+	<xs:complexType name="INSTANCEtype">
+		<xs:sequence>
+			<xs:element ref="ndb:START_DATE"/>
+			<xs:element ref="ndb:PRICE"/>
+			<xs:element ref="ndb:TOURGUIDE"/>
+			<xs:element ref="ndb:CLIENTS"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="TOURNAME" type="xs:string"/> 
+	
+	<xs:element name="DEST_CONTINENT" type="ndb:DEST_CONTtype"/>
+	<xs:complexType name="DEST_CONTtype">
+			<xs:sequence>
+				<xs:element ref="ndb:DEST_COUNTRY"/>
+			</xs:sequence>
+			<xs:attribute name="contidref" use="required" type="xs:string"/>
+	</xs:complexType>
+	
+	<xs:element name="TOUR_TYPE">
+		<xs:complexType>
+			<xs:attribute name="typeidref" use="required" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="DEST_COUNTRY">
+		<xs:complexType>
+			<xs:attribute name="countidref" use="required" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="TOUR_BUDGET">
+		<xs:complexType>
+			<xs:attribute name="budgidref" use="required" type="xs:string"/>
+	</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="TOURGUIDE">
+		<xs:complexType>
+			<xs:attribute name="guideref" use="required" type="xs:string"/>
+	</xs:complexType>
+	</xs:element>
+	
+	
+	<xs:element name="CLIENTS" type="ndb:Clientstype"/>
+	<xs:complexType name="Clientstype">
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="ndb:TOURCLIENT"/>
+			</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="TOURCLIENT">
+	<xs:complexType>
+			<xs:attribute name="clientref" use="required" type="xs:string"/>
+	</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="DESCRIPTION" type="xs:string"/>
+	<xs:element name="START_DATE" type="xs:date"/>
+	<xs:element name="FLIGHTS" type="xs:boolean"/>
+	<xs:element name="TRANSFERS" type="xs:boolean"/>
+	<xs:element name="DURATION" type="xs:string"/> 
+	<xs:element name="PRICE" type="xs:integer"/> 
+	
+	<xs:element name="RATINGS" type="ndb:RATINGStype" /> 
+	<xs:complexType name="RATINGStype">
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="ndb:RATING"/>
+			</xs:sequence>
+	</xs:complexType>
+
+	
+	
+	<xs:element name="RATING" type="xs:decimal"/> 
+	
+	<xs:element name="CONTINENT" type='ndb:Continenttype'/>
+	<xs:complexType name='Continenttype'>
+		<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="contid" use="required" type="xs:string"/>
+				</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	<xs:element name="COUNTRY" type='ndb:Countrytype' />
+	<xs:complexType name='Countrytype'>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="countid" use="required" type="xs:string"/>
+				</xs:extension>
+			</xs:simpleContent>
+	</xs:complexType>
+	
+	<xs:element name="TYPE" type='ndb:Typetype'/>
+	<xs:complexType name='Typetype'>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="typeid" use="required" type="xs:string"/>
+				</xs:extension>
+			</xs:simpleContent>
+	</xs:complexType>
+	
+	<xs:element name="BUDGET" type='ndb:Budgettype'/>
+	<xs:complexType name='Budgettype'>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="budgid" use="required" type="xs:string"/>
+				</xs:extension>
+			</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:element name="GUIDE" type='ndb:Guidetype'/>
+	<xs:complexType name='Guidetype'>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="guideid" use="required" type="xs:string"/>
+				</xs:extension>
+			</xs:simpleContent>
+	</xs:complexType>
+	
+	
+	<xs:element name="CLIENT">
+	<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ndb:CLIENTLASTNAME"/>
+				<xs:element ref="ndb:CLIENTFIRSTNAME"/>
+			</xs:sequence>
+			<xs:attribute name="clientid" use="required" type="xs:string"/>
+	</xs:complexType>
+	</xs:element>
+	<xs:element name="CLIENTLASTNAME" type="xs:string"/> 
+	<xs:element name="CLIENTFIRSTNAME" type="xs:string"/> 
+	
+</xs:schema>

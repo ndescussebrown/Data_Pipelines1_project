@@ -1,0 +1,34 @@
+{
+"$schema": "http://json-schema.org/schema#",
+"$id" : "http://yourdoamn.com/schemas/myschema.json",
+"title": "CLIENTS",
+"description": "List of clients and their tours",
+"type": "object",
+"properties":{
+	"id":{
+		"description": "Client id",
+		"type" : "string" 
+	},
+	"CLIENTNAME": {
+		"LASTNAME": {
+			"description": "Lastname of client",
+			"type": "string",
+		},
+		"FIRSTNAME": {
+			"description": "Firstname of client",
+			"type": "string"
+		}			
+
+	},
+	"TOURS": {
+		"TOURNAME": {
+		"description": "Name of Tour",
+		"type" : "string"
+		},
+		"TOURDATE": {
+		"description": "Name of Tour",
+		"type" : "date"
+		}
+	}
+}
+}
